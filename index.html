@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jon Arrel Rojas | Web Developer Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <div class="container">
-            <h1>Jon Arrel Rojas</h1>
+        <div class="container header-flex">
+            <div class="logo">JR<span>.</span></div>
             <nav>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
@@ -19,44 +20,84 @@
         </div>
     </header>
 
-    <main class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi! I'm Jon Arrel Rojas, an aspiring developer. Welcome to my portfolio! I build clean, responsive, and modern web applications. Currently learning, building projects, and expanding my tech stack.</p>
+    <section id="about" class="hero-section">
+        <div class="container text-center">
+            <span class="badge">Available for Projects</span>
+            <h1>Hi, I'm <span class="gradient-text">Jon Arrel Rojas</span></h1>
+            <p class="lead-text">An aspiring Frontend Developer specialized in building modern, interactive, and high-performance web experiences. Focused on turning clean code into beautiful user interfaces.</p>
             
-            <div style="margin-top: 20px;">
-                <p><strong>Tech Stack:</strong> HTML5 | CSS3 | Git | GitHub | Netlify Deployment</p>
+            <div class="tech-stack">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Git & GitHub</span>
+                <span class="tag">Netlify</span>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projects">
-            <h2>My Projects</h2>
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Selected Projects</h2>
             <div class="project-grid">
                 
                 <div class="project-card">
-                    <h3>Personal Portfolio Website</h3>
-                    <p>A modern, responsive portfolio website built with clean HTML and custom CSS, automated with GitHub and Netlify.</p>
-                    <a href="#">View Code</a>
+                    <div class="card-content">
+                        <span class="project-category">Featured Project</span>
+                        <h3>Personal Portfolio V2</h3>
+                        <p>A premium dark-themed portfolio featuring modern layout grids, custom CSS animations, and production deployment.</p>
+                        <div class="card-tags">
+                            <span>HTML</span> <span>CSS</span> <span>Git</span>
+                        </div>
+                        <a href="#" class="btn-project">View Repository &rarr;</a>
+                    </div>
                 </div>
 
                 <div class="project-card">
-                    <h3>Future Project 1</h3>
-                    <p>Exciting web application project currently under development. Stay tuned for updates!</p>
-                    <a href="#">View Code</a>
+                    <div class="card-content">
+                        <span class="project-category">Web Application</span>
+                        <h3>Task Management Tool</h3>
+                        <p>An interactive dynamic app under development designed to streamline productivity and workflow automation.</p>
+                        <div class="card-tags">
+                            <span>JavaScript</span> <span>CSS</span>
+                        </div>
+                        <a href="#" class="btn-project">Coming Soon &rarr;</a>
+                    </div>
                 </div>
 
                 <div class="project-card">
-                    <h3>Future Project 2</h3>
-                    <p>Coming soon. Exploring advanced frontend designs and interactive user interfaces.</p>
-                    <a href="#">View Code</a>
+                    <div class="card-content">
+                        <span class="project-category">UI/UX Component</span>
+                        <h3>E-Commerce Landing Page</h3>
+                        <p>Exploring high-converting layouts, fluid responsive grids, and modern clean aesthetics for modern brands.</p>
+                        <div class="card-tags">
+                            <span>HTML</span> <span>CSS Grid</span>
+                        </div>
+                        <a href="#" class="btn-project">In Progress &rarr;</a>
+                    </div>
                 </div>
 
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container text-center">
+            <h2 class="section-title center">Let's Build Something Together</h2>
+            <p class="contact-text">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is open!</p>
+            <a href="mailto:your-email@example.com" class="btn-primary">Say Hello</a>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2026 Jon Arrel Rojas. Let's connect!</p>
+        <div class="container footer-flex">
+            <p>&copy; 2026 Jon Arrel Rojas. Built with passion.</p>
+            <div class="footer-links">
+                <a href="https://github.com/RojasJonArrel" target="_blank">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>
