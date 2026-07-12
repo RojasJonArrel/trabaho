@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jon Arrel Rojas | Creative Developer</title>
+    <title>Jon Arrel Rojas | Fresh Graduate & Frontend Developer</title>
     <!-- Premium Font: Plus Jakarta Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -16,7 +16,7 @@
             <a href="#" class="logo">Jon<span>.</span></a>
             <nav>
                 <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Work</a>
+                <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
                 <a href="#" class="btn-primary small">Resume</a>
             </nav>
@@ -31,27 +31,27 @@
         
         <div class="container hero-container text-center">
             
-            <!-- PROFILE PICTURE WITH GLOWING FRAME (CLICKABLE) -->
+            <!-- PROFILE PICTURE (FIXED TO JPG & CLICKABLE) -->
             <div class="profile-wrapper">
                 <img src="profile.jpg" alt="Jon Arrel Rojas" class="profile-img" id="myProfilePic">
             </div>
 
             <div class="status-pill">
-                <span class="dot"></span> Available for new opportunities
+                <span class="dot"></span> Fresh Graduate | Open for Entry-Level Roles
             </div>
             
             <h1 class="hero-title">
-                Crafting digital <br>
-                <span class="text-gradient">experiences.</span>
+                Bringing fresh ideas <br>
+                to the <span class="text-gradient">digital world.</span>
             </h1>
             
             <p class="hero-subtitle">
-                I'm <strong>Jon Arrel Rojas</strong>, a frontend developer focused on building interactive, high-performance, and beautiful web interfaces.
+                I'm <strong>Jon Arrel Rojas</strong>, a passionate <strong>Fresh Graduate</strong> and Frontend Developer. Hungry to learn, adapt, and build modern web experiences with clean, efficient code.
             </p>
             
             <div class="cta-group">
-                <a href="#projects" class="btn-primary">See My Work</a>
-                <a href="#contact" class="btn-secondary">Let's Talk</a>
+                <a href="#projects" class="btn-primary">View My Projects</a>
+                <a href="#contact" class="btn-secondary">Let's Connect</a>
             </div>
         </div>
     </section>
@@ -59,7 +59,7 @@
     <!-- Premium Bento Grid Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Selected <span class="text-gradient">Works</span></h2>
+            <h2 class="section-title">Academic & Personal <span class="text-gradient">Projects</span></h2>
             
             <div class="bento-grid">
                 <!-- Project 1 -->
@@ -70,11 +70,11 @@
                             <span class="tag glass-tag">Portfolio</span>
                         </div>
                         <h3>Jon.Dev V3</h3>
-                        <p>A masterclass in modern CSS. This portfolio utilizes glassmorphism, fluid typography, and advanced hover states to create a memorable user experience.</p>
+                        <p>My interactive personal portfolio built to showcase my growth, skills, and technical capabilities as a graduating developer. Features advanced CSS layouts, glassmorphic design, and smooth user interactions.</p>
                         <div class="tech-row">
                             <span class="tech-item">HTML5</span>
                             <span class="tech-item">Advanced CSS</span>
-                            <span class="tech-item">Netlify CI/CD</span>
+                            <span class="tech-item">JavaScript</span>
                         </div>
                         <a href="#" class="project-link">View Live Project ↗</a>
                     </div>
@@ -84,10 +84,10 @@
                 <div class="glass-card project-card">
                     <div class="card-inner">
                         <div class="project-meta">
-                            <span class="tag glass-tag">App</span>
+                            <span class="tag glass-tag">Capstone</span>
                         </div>
-                        <h3>TaskFlow</h3>
-                        <p>A smart productivity dashboard engineered for seamless task management and team collaboration.</p>
+                        <h3>TaskFlow System</h3>
+                        <p>An academic capstone project designed to streamline school task management and team collaborations for students.</p>
                         <a href="#" class="project-link mt-auto">Source Code ↗</a>
                     </div>
                 </div>
@@ -96,10 +96,10 @@
                 <div class="glass-card project-card">
                     <div class="card-inner">
                         <div class="project-meta">
-                            <span class="tag glass-tag">UI/UX</span>
+                            <span class="tag glass-tag">Self-Taught</span>
                         </div>
                         <h3>E-Com UI Kit</h3>
-                        <p>Responsive, high-converting product pages designed for modern retail brands.</p>
+                        <p>A responsive frontend practice project replicating modern e-commerce user journeys to master fluid typography and grid styling.</p>
                         <a href="#" class="project-link mt-auto">Source Code ↗</a>
                     </div>
                 </div>
@@ -110,8 +110,8 @@
     <!-- Sleek Contact Section -->
     <section id="contact" class="contact">
         <div class="container text-center glass-card contact-box">
-            <h2 class="section-title">Let's build the <span class="text-gradient">future.</span></h2>
-            <p class="contact-desc">Have a project in mind, or just want to say hi? My inbox is always open.</p>
+            <h2 class="section-title">Ready to contribute and <span class="text-gradient">grow.</span></h2>
+            <p class="contact-desc">I am actively looking for frontend internships or entry-level developer roles. Let's discuss how I can add value to your team!</p>
             <a href="mailto:jonarrelrojas@email.com" class="btn-primary large">jonarrelrojas@email.com</a>
         </div>
     </section>
@@ -127,31 +127,28 @@
         </div>
     </footer>
 
-    <!-- IMAGE ZOOM MODAL (BACKGROUND POPUP) -->
+    <!-- IMAGE ZOOM MODAL -->
     <div id="imgModal" class="modal">
         <span class="close-modal">&times;</span>
         <img class="modal-content" id="zoomedImg">
     </div>
 
-    <!-- JAVASCRIPT PARA SA CLICK TO ZOOM -->
+    <!-- JAVASCRIPT FOR CLICK TO ZOOM -->
     <script>
         const modal = document.getElementById("imgModal");
         const img = document.getElementById("myProfilePic");
         const modalImg = document.getElementById("zoomedImg");
         const closeBtn = document.querySelector(".close-modal");
 
-        // Pag kinlick ang picture, bubukas ang modal
         img.addEventListener("click", function(){
             modal.style.display = "flex";
             modalImg.src = this.src;
         });
 
-        // Pag kinlick ang X button, sasara
         closeBtn.addEventListener("click", function() {
             modal.style.display = "none";
         });
 
-        // Pag kinlick ang labas ng picture (background), sasara rin
         window.addEventListener("click", function(event) {
             if (event.target === modal) {
                 modal.style.display = "none";
