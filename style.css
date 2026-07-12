@@ -172,7 +172,7 @@ nav {
 .blob-1 { top: -100px; left: -100px; background: var(--blob-gradient-1); }
 .blob-2 { bottom: -100px; right: -100px; background: var(--blob-gradient-2); }
 
-/* --- ANG CSS NG PROFILE PICTURE MO --- */
+/* --- PROFILE PICTURE AND SPINNING NEON EFFECT --- */
 .profile-wrapper {
     position: relative;
     width: 140px;
@@ -184,7 +184,6 @@ nav {
     justify-content: center;
 }
 
-/* Ang Spinning Neon Effect sa Likod ng Picture */
 .profile-wrapper::before {
     content: '';
     position: absolute;
@@ -202,9 +201,15 @@ nav {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid var(--bg-main); /* Border para lumutang ang pic */
+    border: 3px solid var(--bg-main); 
     background-color: var(--bg-secondary);
     z-index: 1;
+    cursor: pointer; 
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.08);
 }
 
 @keyframes spinGlow {
@@ -212,6 +217,50 @@ nav {
     100% { transform: rotate(360deg); }
 }
 
+/* --- IMAGE ZOOM MODAL --- */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 10000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.85); 
+    backdrop-filter: blur(8px); 
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 16px;
+    box-shadow: 0 0 50px rgba(0, 242, 254, 0.4); 
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+.close-modal {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-modal:hover {
+    color: #00f2fe;
+}
+
+/* --- Status Pill --- */
 .status-pill {
     display: inline-flex;
     align-items: center;

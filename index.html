@@ -31,10 +31,9 @@
         
         <div class="container hero-container text-center">
             
-            <!-- ANG BAGO MONG PROFILE PICTURE WITH GLOWING FRAME -->
+            <!-- PROFILE PICTURE WITH GLOWING FRAME (CLICKABLE) -->
             <div class="profile-wrapper">
-                <!-- Kung profile.jpg ang pangalan ng picture mo, palitan ang src="profile.png" ng src="profile.jpg" -->
-                <img src="profile.png" alt="Jon Arrel Rojas" class="profile-img">
+                <img src="profile.png" alt="Jon Arrel Rojas" class="profile-img" id="myProfilePic">
             </div>
 
             <div class="status-pill">
@@ -113,7 +112,7 @@
         <div class="container text-center glass-card contact-box">
             <h2 class="section-title">Let's build the <span class="text-gradient">future.</span></h2>
             <p class="contact-desc">Have a project in mind, or just want to say hi? My inbox is always open.</p>
-            <a href="mailto:your-email@example.com" class="btn-primary large">jonarrelrojas@email.com</a>
+            <a href="mailto:jonarrelrojas@email.com" class="btn-primary large">jonarrelrojas@email.com</a>
         </div>
     </section>
 
@@ -128,5 +127,36 @@
         </div>
     </footer>
 
+    <!-- IMAGE ZOOM MODAL (BACKGROUND POPUP) -->
+    <div id="imgModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="zoomedImg">
+    </div>
+
+    <!-- JAVASCRIPT PARA SA CLICK TO ZOOM -->
+    <script>
+        const modal = document.getElementById("imgModal");
+        const img = document.getElementById("myProfilePic");
+        const modalImg = document.getElementById("zoomedImg");
+        const closeBtn = document.querySelector(".close-modal");
+
+        // Pag kinlick ang picture, bubukas ang modal
+        img.addEventListener("click", function(){
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+        });
+
+        // Pag kinlick ang X button, sasara
+        closeBtn.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+
+        // Pag kinlick ang labas ng picture (background), sasara rin
+        window.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
 </body>
 </html>
