@@ -3,84 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jon Arrel Rojas | Fresh Graduate & Frontend Developer</title>
-    <!-- Premium Font: Plus Jakarta Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Jon Arrel Rojas | Frontend Developer</title>
+    <!-- Premium Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Frosted Glass Header -->
+    <!-- Ambient Background Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Frosted Glass Navigation -->
     <header class="glass-nav">
         <div class="container header-content">
             <a href="#" class="logo">Jon<span>.</span></a>
             <nav>
                 <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
-                <a href="#" class="btn-primary small">Resume</a>
+                <a href="#" class="btn-primary small">Download CV</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section (Professional 2-Column Layout) -->
+    <!-- HERO SECTION -->
     <section id="hero" class="hero">
-        <!-- Glowing background blobs -->
-        <div class="glow-blob blob-1"></div>
-        <div class="glow-blob blob-2"></div>
-        
         <div class="container hero-container">
             
-            <!-- KALIWA: Text Content -->
+            <!-- Left: Text Content -->
             <div class="hero-content">
-                <div class="status-pill">
-                    <span class="dot"></span> Fresh Graduate | Open for Entry-Level Roles
+                <div class="status-pill fade-in-up" style="animation-delay: 0.1s;">
+                    <span class="dot"></span> 
+                    <span class="status-text">BSIT Fresh Graduate • Ready to Hire</span>
                 </div>
                 
-                <h1 class="hero-title">
-                    Bringing fresh ideas <br>
-                    to the <span class="text-gradient">digital world.</span>
+                <h1 class="hero-title fade-in-up" style="animation-delay: 0.2s;">
+                    Crafting <span class="text-gradient">digital</span> <br>
+                    experiences with <br>purpose.
                 </h1>
                 
-                <p class="hero-subtitle">
-                    I'm <strong>Jon Arrel Rojas</strong>, a passionate <strong>Fresh Graduate</strong> and Frontend Developer. Hungry to learn, adapt, and build modern web experiences with clean, efficient code.
+                <p class="hero-subtitle fade-in-up" style="animation-delay: 0.3s;">
+                    Hi, I'm <strong>Jon Arrel Rojas</strong>. A passionate and detail-oriented Frontend Developer blending clean code with stunning user interfaces. I turn complex problems into elegant, scalable web solutions.
                 </p>
                 
-                <div class="cta-group">
-                    <a href="#projects" class="btn-primary">View My Projects</a>
-                    <a href="#contact" class="btn-secondary">Let's Connect</a>
+                <div class="cta-group fade-in-up" style="animation-delay: 0.4s;">
+                    <a href="#projects" class="btn-primary large">Explore Work <span class="arrow">→</span></a>
+                    <a href="#contact" class="btn-secondary large">Let's Talk</a>
+                </div>
+
+                <div class="quick-stats fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="stat">
+                        <span class="stat-num">4+</span>
+                        <span class="stat-label">Major Projects</span>
+                    </div>
+                    <div class="stat divider"></div>
+                    <div class="stat">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label">Commitment</span>
+                    </div>
                 </div>
             </div>
 
-            <!-- KANAN: Professional Image -->
-            <div class="hero-image-wrapper">
-                <img src="profile.jpg" alt="Jon Arrel Rojas" class="profile-img" id="myProfilePic">
-                <!-- Subtle elegant glow sa likod ng picture -->
-                <div class="image-glow"></div> 
+            <!-- Right: Professional Image -->
+            <div class="hero-image-wrapper fade-in-up" style="animation-delay: 0.3s;">
+                <div class="image-glass-frame">
+                    <!-- IMAGE FIXED TO JPG -->
+                    <img src="profile.jpg" alt="Jon Arrel Rojas" class="profile-img" id="myProfilePic">
+                    <div class="floating-badge badge-1">💻 Frontend</div>
+                    <div class="floating-badge badge-2">✨ UI/UX</div>
+                </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Premium Bento Grid Projects Section -->
+    <!-- ABOUT & EDUCATION SECTION -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title text-center">Behind the <span class="text-gradient">Code</span></h2>
+            
+            <div class="about-grid">
+                <div class="glass-card about-text">
+                    <h3>My Journey</h3>
+                    <p>As a recent BS Information Technology graduate, my academic journey has equipped me with a strong foundation in software engineering, database management, and modern web development.</p>
+                    <p>I specialize in building responsive, accessible, and high-performance user interfaces. I am highly adaptable, eager to learn new frameworks, and thrive in collaborative environments where I can contribute fresh perspectives.</p>
+                    <div class="soft-skills">
+                        <span class="tag">Problem Solving</span>
+                        <span class="tag">Team Player</span>
+                        <span class="tag">Adaptability</span>
+                        <span class="tag">Attention to Detail</span>
+                    </div>
+                </div>
+
+                <div class="glass-card education-timeline">
+                    <h3>Education & Milestones</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4>BS Information Technology</h4>
+                            <span class="date">Graduated 2026</span>
+                            <p>Focused on web engineering and systems design. Developed a comprehensive capstone system awarded for technical excellence.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <h4>Frontend Development Intern</h4>
+                            <span class="date">2025</span>
+                            <p>Assisted in building responsive UI components and resolving cross-browser compatibility issues for a local startup.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH STACK SECTION -->
+    <section id="skills" class="skills-section">
+        <div class="container text-center">
+            <h2 class="section-title">My Technical <span class="text-gradient">Arsenal</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h4>HTML5 & CSS3</h4>
+                    <p>Semantic markup, Flexbox, Grid, & Animations</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h4>JavaScript (ES6+)</h4>
+                    <p>DOM manipulation, APIs, & Async programming</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚛️</div>
+                    <h4>Modern Frameworks</h4>
+                    <p>Familiar with React.js basics & Tailwind CSS</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔧</div>
+                    <h4>Tools & Version Control</h4>
+                    <p>Git, GitHub, VS Code, Figma to Code</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM BENTO GRID PROJECTS -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Academic & Personal <span class="text-gradient">Projects</span></h2>
+            <h2 class="section-title text-center">Featured <span class="text-gradient">Projects</span></h2>
             
             <div class="bento-grid">
-                <!-- Project 1 -->
+                <!-- Project 1 (Large) -->
                 <div class="glass-card project-card featured">
                     <div class="card-inner">
                         <div class="project-meta">
-                            <span class="tag glass-tag">2026</span>
-                            <span class="tag glass-tag">Portfolio</span>
+                            <span class="tag glass-tag">2026 • Portfolio</span>
                         </div>
-                        <h3>Jon.Dev V3</h3>
-                        <p>My interactive personal portfolio built to showcase my growth, skills, and technical capabilities as a graduating developer. Features advanced CSS layouts, glassmorphic design, and smooth user interactions.</p>
+                        <h3>Jon.Dev Architecture v3</h3>
+                        <p>A highly interactive personal portfolio showcasing advanced CSS layouts, glassmorphism, and performance optimization. Built from scratch to demonstrate UI/UX mastery and attention to micro-interactions.</p>
                         <div class="tech-row">
                             <span class="tech-item">HTML5</span>
                             <span class="tech-item">Advanced CSS</span>
-                            <span class="tech-item">JavaScript</span>
+                            <span class="tech-item">Vanilla JS</span>
                         </div>
                         <a href="#" class="project-link">View Live Project ↗</a>
                     </div>
@@ -90,10 +175,15 @@
                 <div class="glass-card project-card">
                     <div class="card-inner">
                         <div class="project-meta">
-                            <span class="tag glass-tag">Capstone</span>
+                            <span class="tag glass-tag">Academic Capstone</span>
                         </div>
-                        <h3>TaskFlow System</h3>
-                        <p>An academic capstone project designed to streamline school task management and team collaborations for students.</p>
+                        <h3>TaskFlow Management System</h3>
+                        <p>A comprehensive web application designed to streamline academic task management, deadline tracking, and team collaboration for university students.</p>
+                        <div class="tech-row">
+                            <span class="tech-item">JavaScript</span>
+                            <span class="tech-item">PHP</span>
+                            <span class="tech-item">MySQL</span>
+                        </div>
                         <a href="#" class="project-link mt-auto">Source Code ↗</a>
                     </div>
                 </div>
@@ -102,10 +192,14 @@
                 <div class="glass-card project-card">
                     <div class="card-inner">
                         <div class="project-meta">
-                            <span class="tag glass-tag">Self-Taught</span>
+                            <span class="tag glass-tag">Self-Taught Practice</span>
                         </div>
-                        <h3>E-Com UI Kit</h3>
-                        <p>A responsive frontend practice project replicating modern e-commerce user journeys to master fluid typography and grid styling.</p>
+                        <h3>E-Commerce UI Kit</h3>
+                        <p>A responsive frontend practice project replicating modern e-commerce user journeys to master fluid typography, grid styling, and state management logic.</p>
+                        <div class="tech-row">
+                            <span class="tech-item">Tailwind CSS</span>
+                            <span class="tech-item">HTML</span>
+                        </div>
                         <a href="#" class="project-link mt-auto">Source Code ↗</a>
                     </div>
                 </div>
@@ -113,22 +207,28 @@
         </div>
     </section>
 
-    <!-- Sleek Contact Section -->
+    <!-- CONTACT SECTION -->
     <section id="contact" class="contact">
-        <div class="container text-center glass-card contact-box">
-            <h2 class="section-title">Ready to contribute and <span class="text-gradient">grow.</span></h2>
-            <p class="contact-desc">I am actively looking for frontend internships or entry-level developer roles. Let's discuss how I can add value to your team!</p>
-            <a href="mailto:jonarrelrojas@email.com" class="btn-primary large">jonarrelrojas@email.com</a>
+        <div class="container">
+            <div class="glass-card contact-box text-center">
+                <h2>Let's build something <span class="text-gradient">amazing.</span></h2>
+                <p class="contact-desc">I am actively seeking entry-level frontend developer roles and internships. If you're looking for a dedicated, fast-learning developer to join your team, my inbox is always open.</p>
+                <div class="contact-actions">
+                    <a href="mailto:jonarrelrojas@email.com" class="btn-primary large">jonarrelrojas@email.com</a>
+                    <a href="#" class="btn-secondary large">Connect on LinkedIn</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Minimalist Footer -->
     <footer>
         <div class="container footer-content">
-            <p class="copyright">© 2026 Jon Arrel Rojas. All rights reserved.</p>
+            <p class="copyright">© 2026 Jon Arrel Rojas. Crafted with passion & code.</p>
             <div class="social-links">
                 <a href="https://github.com/RojasJonArrel" target="_blank" class="hover-glow">GitHub</a>
                 <a href="#" class="hover-glow">LinkedIn</a>
+                <a href="#" class="hover-glow">Twitter</a>
             </div>
         </div>
     </footer>
@@ -139,8 +239,9 @@
         <img class="modal-content" id="zoomedImg">
     </div>
 
-    <!-- JAVASCRIPT FOR CLICK TO ZOOM -->
+    <!-- JAVASCRIPT -->
     <script>
+        // Modal Logic
         const modal = document.getElementById("imgModal");
         const img = document.getElementById("myProfilePic");
         const modalImg = document.getElementById("zoomedImg");
@@ -159,6 +260,25 @@
             if (event.target === modal) {
                 modal.style.display = "none";
             }
+        });
+
+        // Intersection Observer for Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.glass-card, .skill-card, .section-title').forEach(el => {
+            el.classList.add('scroll-animate');
+            observer.observe(el);
         });
     </script>
 </body>
