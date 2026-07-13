@@ -73,7 +73,7 @@
                 </div>
             </div>
 
-            <!-- Right: Professional Image -->
+            <!-- Right: Professional Image (Box Layout) -->
             <div class="hero-image-wrapper fade-in-up" style="animation-delay: 0.3s;">
                 <div class="image-glass-frame">
                     <img src="profile.jpg" alt="Jon Arrel Rojas" class="profile-img" id="myProfilePic">
@@ -125,7 +125,7 @@
         </div>
     </section>
 
-    <!-- NEW SECTION: SERVICES / WHAT I DO -->
+    <!-- SERVICES / WHAT I DO -->
     <section id="services" class="services-section">
         <div class="container">
             <h2 class="section-title text-center">What I <span class="text-gradient">Deliver</span></h2>
@@ -178,7 +178,7 @@
         </div>
     </section>
 
-    <!-- EXPANDED BENTO GRID PROJECTS (5 Projects Now) -->
+    <!-- EXPANDED BENTO GRID PROJECTS -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title text-center">Featured <span class="text-gradient">Projects</span></h2>
@@ -234,7 +234,7 @@
                     </div>
                 </div>
 
-                <!-- Project 4 (New - Half Width/Wide) -->
+                <!-- Project 4 (Wide) -->
                 <div class="glass-card project-card wide">
                     <div class="card-inner">
                         <div class="project-meta">
@@ -251,7 +251,7 @@
                     </div>
                 </div>
 
-                <!-- Project 5 (New - Half Width/Wide) -->
+                <!-- Project 5 (Wide) -->
                 <div class="glass-card project-card wide">
                     <div class="card-inner">
                         <div class="project-meta">
@@ -272,7 +272,7 @@
         </div>
     </section>
 
-    <!-- NEW SECTION: CERTIFICATIONS -->
+    <!-- CERTIFICATIONS -->
     <section id="certificates" class="certificates-section">
         <div class="container">
             <h2 class="section-title text-center">Badges & <span class="text-gradient">Certifications</span></h2>
@@ -285,7 +285,7 @@
                 <div class="glass-card cert-card">
                     <span class="cert-year">2025</span>
                     <h4>Advanced JavaScript Frameworks</h4>
-                    <p class="issuer">Issued by Coursera (Placeholder)</p>
+                    <p class="issuer">Issued by Coursera</p>
                 </div>
                 <div class="glass-card cert-card">
                     <span class="cert-year">2025</span>
@@ -330,7 +330,6 @@
 
     <!-- JAVASCRIPT -->
     <script>
-        // Modal Logic
         const modal = document.getElementById("imgModal");
         const img = document.getElementById("myProfilePic");
         const modalImg = document.getElementById("zoomedImg");
@@ -351,7 +350,6 @@
             }
         });
 
-        // Intersection Observer for Scroll Animations
         const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
